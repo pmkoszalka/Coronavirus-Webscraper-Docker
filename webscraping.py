@@ -35,7 +35,7 @@ class Webscraping():
         self.driver = webdriver.Remote(command_executor=f"http://chromedriver:{self.port}/wd/hub", options=options)
 
     def land_coronavirus_data_website(self):
-        """Nacigates to the goverment page from which tha data is being collected"""
+        """Navigates to the goverment page from which tha data is being collected"""
 
         self.driver.get("https://wojewodztwa-rcb-gis.hub.arcgis.com/pages/dane-do-pobrania")
 
